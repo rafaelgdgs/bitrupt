@@ -6,14 +6,14 @@ mod words;
 mod prelude {
     pub use crate::gen_words::gen_words_12;
     pub use crate::gen_words::gen_words_24;
-    pub use crate::pre_proc::show;
+    pub use crate::pre_proc::generate;
     pub use crate::words::WORDS;
 }
 
 use crate::prelude::*;
 
 fn main() {
-    // show();
+    // generate();
     let x = gen_words_12();
     println!("{:?}", x);
 }

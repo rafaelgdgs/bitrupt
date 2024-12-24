@@ -1,6 +1,6 @@
 use std::fs;
 
-pub fn show() {
+pub fn generate() {
     let file_path = "english.txt";
     let contents = fs::read_to_string(file_path).expect("Should've openned the file.");
 
